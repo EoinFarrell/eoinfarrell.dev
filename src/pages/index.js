@@ -1,23 +1,66 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+
+export default ({ data }) => {
+  return (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
     <p>Here you'll find links to anything I work on in my spare time.</p>
     <p>Well hopefully, I've just created this site so lets see how it goes.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="https://www.linkedin.com/in/eoinfarrell/">LinkedIn</Link>
     <br/>
-    <Link to="/index2/">Go to page 3</Link>
-  </Layout>
-)
+    <Link to="https://github.com/EoinFarrell">Github</Link>
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div> */}
 
-export default IndexPage
+    <div>
+      <h1>
+        Amazing Pandas Eating Things
+      </h1>
+      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id}>
+          <Link
+            to={node.fields.slug}
+          >
+            <h3>
+              {node.frontmatter.title}{" "}
+              <span>
+                — {node.frontmatter.date}
+              </span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </Link>
+        </div>
+      ))}
+    </div>
+  </Layout> 
+)
+}
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
