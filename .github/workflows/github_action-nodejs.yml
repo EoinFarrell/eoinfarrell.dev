@@ -24,5 +24,7 @@ jobs:
         npm test
       env:
         CI: true
+    - name: Install Gatsby CLI
+      run: npm install -g gatsby-cli
     - name: Gatsby Build
       run: gatsby build
