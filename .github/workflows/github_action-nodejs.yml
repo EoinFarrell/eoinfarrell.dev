@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -28,8 +28,16 @@ jobs:
       run: npm install -g gatsby-cli
     - name: Gatsby Build
       run: gatsby build
+    - name: Change Directory
+      run: |
+        mkdir ../../EoinFarrell.github.io
+        cd ../../EoinFarrell.github.io
     - name: Checkout
       uses: actions/checkout@v2.0.0
       with:
         # Repository name with owner. For example, actions/checkout
         repository: EoinFarrell/EoinFarrell.github.io
+    - name: Copy Build
+      run: cp ../eoinfarrell.dev/eoinfarrell.dev/public .
+    - name: Simple commit
+      uses: zwaldowski/git-commit-action@v1
