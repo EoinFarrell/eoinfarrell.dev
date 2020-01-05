@@ -17,21 +17,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: npm install, build, test and deploy
       run: |
         npm ci
         npm run build --if-present
         npm test
+        npm deploy
       env:
         CI: true
-    - name: Install Gatsby CLI
-      run: npm install -g gatsby-cli
-    - name: Gatsby Build
-      run: gatsby build
-    - name: Publish
-      uses: johno/actions-push-subdirectories@master
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        args: public eoinfarrell EoinFarrell.github.io
