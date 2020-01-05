@@ -28,16 +28,10 @@ jobs:
       run: npm install -g gatsby-cli
     - name: Gatsby Build
       run: gatsby build
-    - name: Change Directory
-      run: |
-        mkdir ../../EoinFarrell.github.io
-        cd ../../EoinFarrell.github.io
-    - name: Checkout
-      uses: actions/checkout@v2.0.0
+    - name: Publish
+      uses: johno/actions-push-subdirectories@master
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        # Repository name with owner. For example, actions/checkout
-        repository: EoinFarrell/EoinFarrell.github.io
-    - name: Copy Build
-      run: cp ../eoinfarrell.dev/eoinfarrell.dev/public .
-    - name: Simple commit
-      uses: zwaldowski/git-commit-action@v1
+        args: public eoinfarrell EoinFarrell.github.io
