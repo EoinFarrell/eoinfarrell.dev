@@ -25,4 +25,4 @@ jobs:
         npm run deploy
       env:
         CI: true
-        super_secret: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
