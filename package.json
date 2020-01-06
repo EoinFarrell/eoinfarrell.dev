@@ -49,7 +49,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "jest",
-    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/eoinfarrell/eoinfarrell.github.io.git -u \"Eoin Farrell <me@eoinfarrell.dev>\""
+    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/eoinfarrell/eoinfarrell.github.io.git -b master -u \"Eoin Farrell <me@eoinfarrell.dev>\""
   },
   "repository": {
     "type": "git",
