@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `eoinfarrell.dev`,
@@ -56,9 +58,9 @@ module.exports = {
     {
       resolve:`gatsby-source-cloudinary`,
       options:{
-        cloudName: 'eoinfarrell',
-        apiKey: '482726426563678',
-        apiSecret: 'SO6Ujg7pVh2eIi0kKb00DUo-OII',
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
         // resourceType: `image`,
         // type: `type Value`,
         maxResults: `500`,
