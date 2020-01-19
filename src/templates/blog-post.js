@@ -28,6 +28,15 @@ export default ({ data }) => {
       </div>
 
       <ImageGallery items={galleryImages} />
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            if(post.frontmatter.gallery){
+            }
+          `,
+        }}
+      />
     </Layout>
   )
 }
@@ -38,6 +47,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        draft
+        gallery
       }
     }
     allCloudinaryMedia {
