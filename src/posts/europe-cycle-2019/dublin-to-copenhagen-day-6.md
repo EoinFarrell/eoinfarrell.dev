@@ -29,8 +29,6 @@
 *   Arrive in Brighton and head to the apartment and order Thai for dinner with Amy and Anna
 *   Head to the train station that night to meet Conor when he arrives
 
-</div>
-
 #### Pictures
 
 #### Komoot & Strava Overviews
