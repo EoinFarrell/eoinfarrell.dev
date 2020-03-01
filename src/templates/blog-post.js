@@ -14,7 +14,8 @@ export default ({ data }) => {
   // for (var i = 0; i < images.edges.length; i++) {
   for (var i = 0; i < 6; i++) {
     galleryImages.push({
-      original: images.edges[i].node.url
+      original: images.edges[i].node.url,
+      thumbnail: images.edges[i].node.url
     })
   }
   
@@ -28,16 +29,33 @@ export default ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
 
-      <ImageGallery items={galleryImages} />
+      <ImageGallery 
+        items={galleryImages}
+        lazyLoad={false}
+        showIndex={false}
+        showBullets={true}
+        infinite={true}
+        showThumbnails={true}
+        showFullscreenButton={true}
+        showGalleryFullscreenButton={true}
+        showPlayButton={false}
+        showGalleryPlayButton={false}
+        showNav={true}
+        isRTL={false}
+        slideDuration={450}
+        slideInterval={2000}
+        slideOnThumbnailOver={false}
+        thumbnailPosition={'bottom'}
+      />
 
-      <script
+      {/* <script
         dangerouslySetInnerHTML={{
           __html: `
             if(post.frontmatter.gallery){
             }
           `,
         }}
-      />
+      /> */}
     </Layout>
   )
 }
