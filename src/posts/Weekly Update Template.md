@@ -1,6 +1,8 @@
 ---
 title: Weekly Update Template
 date: "2020-01-01"
+draft: true
+gallery: true
 ---
 *First posting from Standard Notes as a test*
 

@@ -29,6 +29,10 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
+            frontmatter {
+              title
+              draft
+            }
             fields {
               slug
             }
@@ -39,14 +43,21 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/blog-post.js`),
-      context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
-        slug: node.fields.slug,
-      },
-    })
+    console.log("Page Name: " + node.frontmatter.title)
+    console.log("Is Draft: " + node.frontmatter.draft)
+    if (node.frontmatter.draft === false) {
+      console.log("Page Name: " + node.frontmatter.title)
+      console.log("Is Draft: " + node.frontmatter.draft)
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/blog-post.js`),
+        context: {
+          // Data passed to context is available
+          // in page queries as GraphQL variables.
+          slug: node.fields.slug,
+          title: node.fields.title
+        },
+      })
+    }
   })
 }

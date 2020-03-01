@@ -11,7 +11,8 @@ export default ({ data }) => {
 
   var galleryImages = [];
 
-  for (var i = 0; i < images.edges.length; i++) {
+  // for (var i = 0; i < images.edges.length; i++) {
+  for (var i = 0; i < 6; i++) {
     galleryImages.push({
       original: images.edges[i].node.url
     })
