@@ -7,17 +7,17 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  const images = data.allCloudinaryMedia
+  // const images = data.allCloudinaryMedia
 
-  var galleryImages = [];
+  // var galleryImages = [];
 
-  // for (var i = 0; i < images.edges.length; i++) {
-  for (var i = 0; i < 6; i++) {
-    galleryImages.push({
-      original: images.edges[i].node.url,
-      thumbnail: images.edges[i].node.url
-    })
-  }
+  // // for (var i = 0; i < images.edges.length; i++) {
+  // for (var i = 0; i < 6; i++) {
+  //   galleryImages.push({
+  //     original: images.edges[i].node.url,
+  //     thumbnail: images.edges[i].node.url
+  //   })
+  // }
   
 
   return (
@@ -29,7 +29,7 @@ export default ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
 
-      <ImageGallery 
+      {/* <ImageGallery 
         items={galleryImages}
         lazyLoad={false}
         showIndex={false}
@@ -46,7 +46,7 @@ export default ({ data }) => {
         slideInterval={2000}
         slideOnThumbnailOver={false}
         thumbnailPosition={'bottom'}
-      />
+      /> */}
 
       {/* <script
         dangerouslySetInnerHTML={{
@@ -70,12 +70,25 @@ export const query = graphql`
         gallery
       }
     }
-    allCloudinaryMedia {
-      edges {
-        node {
-          url
-        }
-      }
-    }
+    # allCloudinaryMedia {
+    #   edges {
+    #     node {
+    #       id
+    #       url
+    #       secure_url
+    #       public_id
+    #       width
+    #       version
+    #       type
+    #       resource_type
+    #       height
+    #       format
+    #       internal {
+    #         contentDigest
+    #         content
+    #       }
+    #     }
+    #   }
+    # }
   }
 `

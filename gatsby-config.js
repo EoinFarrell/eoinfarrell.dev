@@ -56,16 +56,15 @@ module.exports = {
       },
     },
     {
-      resolve:`gatsby-source-cloudinary`,
-      options:{
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
-        // resourceType: `image`,
-        // type: `type Value`,
-        maxResults: `500`,
-        tags:`2019`
-        // prefix: ``
+      resolve: `@piducancore/gatsby-source-cloudinary-metadata`,
+      options: {
+        cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+        api_key: process.env.CLOUDINARY_API_KEY,
+        api_secret: process.env.CLOUDINARY_API_SECRET,
+        max_results: 5, // optional, default: 10s
+        prefix: `Europe Cycle 2019`, // optional
+        resourceType: `image`,
+        type: `upload`,
       },
     },
     'react-image-gallery'

@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import ImageGallery2 from "../components/image2"
 
 
 export default ({ data }) => {
@@ -40,6 +41,9 @@ export default ({ data }) => {
         </div>
       ))}
     </div>
+
+    <ImageGallery2/>
+
   </Layout> 
 )
 }
