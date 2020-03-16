@@ -1,8 +1,9 @@
 ---
-title: Dublin to Copenhagen - Overview
+title: Dublin to Copenhagen - Day 6
 date: "2020-01-19"
 draft: false
 gallery: true
+imageTag: europe-cycle-2019-day-6
 ---
 
 # Dublin to Copenhagen - Day 6

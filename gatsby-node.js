@@ -32,6 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               title
               draft
+              imageTag
             }
             fields {
               slug
@@ -45,9 +46,8 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     console.log("Page Name: " + node.frontmatter.title)
     console.log("Is Draft: " + node.frontmatter.draft)
+    console.log("Image Tag: " + node.frontmatter.imageTag)
     if (node.frontmatter.draft === false) {
-      console.log("Page Name: " + node.frontmatter.title)
-      console.log("Is Draft: " + node.frontmatter.draft)
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/blog-post.js`),
@@ -55,7 +55,8 @@ exports.createPages = async ({ graphql, actions }) => {
           // Data passed to context is available
           // in page queries as GraphQL variables.
           slug: node.fields.slug,
-          title: node.fields.title
+          title: node.fields.title,
+          imageTag: node.frontmatter.imageTag
         },
       })
     }

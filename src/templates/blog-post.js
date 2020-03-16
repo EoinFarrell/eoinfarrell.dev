@@ -3,21 +3,22 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 import ImageGallery from 'react-image-gallery'
+import ImageGallery2 from "../components/image2"
+import '../components/gallery.css'
 import "react-image-gallery/styles/css/image-gallery.css";
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  // const images = data.allCloudinaryMedia
+  const clImages = data.allCloudinaryMedia
 
-  // var galleryImages = [];
+  var galleryImages = [];
 
-  // // for (var i = 0; i < images.edges.length; i++) {
-  // for (var i = 0; i < 6; i++) {
-  //   galleryImages.push({
-  //     original: images.edges[i].node.url,
-  //     thumbnail: images.edges[i].node.url
-  //   })
-  // }
+  for (var i = 0; i < clImages.edges.length; i++) {
+    galleryImages.push({
+      original: clImages.edges[i].node.url,
+      thumbnail: clImages.edges[i].node.url
+    })
+  }
   
 
   return (
@@ -29,7 +30,18 @@ export default ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
 
-      {/* <ImageGallery 
+      {/* <div>
+          <div className="image-grid">
+            {clImages.map((image, index) => (
+                  <div className="image-item" key={`${index}-cl`}>
+                    <img src={image.node.secure_url} alt={"no alt :("} />
+                  </div>
+                ))
+            }
+          </div>
+        </div> */}
+
+      <ImageGallery 
         items={galleryImages}
         lazyLoad={false}
         showIndex={false}
@@ -46,7 +58,7 @@ export default ({ data }) => {
         slideInterval={2000}
         slideOnThumbnailOver={false}
         thumbnailPosition={'bottom'}
-      /> */}
+      />
 
       {/* <script
         dangerouslySetInnerHTML={{
@@ -61,7 +73,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $imageTag: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -70,25 +82,25 @@ export const query = graphql`
         gallery
       }
     }
-    # allCloudinaryMedia {
-    #   edges {
-    #     node {
-    #       id
-    #       url
-    #       secure_url
-    #       public_id
-    #       width
-    #       version
-    #       type
-    #       resource_type
-    #       height
-    #       format
-    #       internal {
-    #         contentDigest
-    #         content
-    #       }
-    #     }
-    #   }
-    # }
+    allCloudinaryMedia(filter: {tags: {eq: $imageTag}}, sort: {order: ASC, fields: original_filename}) {
+      edges {
+        node {
+          id
+          url
+          secure_url
+          public_id
+          width
+          version
+          type
+          resource_type
+          height
+          format
+          internal {
+            contentDigest
+            content
+          }
+        }
+      }
+    }
   }
 `
