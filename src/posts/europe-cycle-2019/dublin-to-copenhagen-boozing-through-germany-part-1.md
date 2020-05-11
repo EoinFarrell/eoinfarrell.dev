@@ -1,9 +1,9 @@
 ---
-title: Dublin to Copenhagen - Day 7
+title: Dublin to Copenhagen - Boozing through Germany - Part 1
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-7
+imageTag: europe-cycle-2019-germany-1
 ---
 
 # Dublin to Copenhagen - Day 7
@@ -16,6 +16,7 @@ imageTag: europe-cycle-2019-day-7
 *   Head to Thorpe Park for the day
 *   Pray for no problems on the M25
 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 
 #### Noteable Moments

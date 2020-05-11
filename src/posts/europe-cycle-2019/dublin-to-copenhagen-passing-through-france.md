@@ -1,9 +1,9 @@
 ---
-title: Dublin to Copenhagen - Day 4
+title: Dublin to Copenhagen - Passing through France
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-4
+imageTag: europe-cycle-2019-france
 ---
 
 # Dublin to Copenhagen - Day 4

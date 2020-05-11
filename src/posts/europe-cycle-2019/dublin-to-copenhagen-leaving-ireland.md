@@ -1,16 +1,14 @@
 ---
-title: Dublin to Copenhagen - Day 1
+title: Dublin to Copenhagen - Leaving Ireland
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-1
+imageTag: europe-cycle-2019-ireland
 ---
 
-# Dublin to Copenhagen - Day 1
+### Dublin to Rosslare
 
-### Dublin to Fishguard
-
-#### Goals for the day
+#### Stats
 
 *   Pack and get bike ready (thanks for the help Adam)
 *   Get train to Rosslare

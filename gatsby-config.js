@@ -68,5 +68,14 @@ module.exports = {
       },
     },
     'react-image-gallery'
+    // 'gatsby-source-strava'
+    // {
+    //   resolve: "gatsby-source-strava-activities",
+    //   options: {
+    //     // This is the "Access Token" from:
+    //     // https://www.strava.com/settings/api
+    //     authToken: process.env.GATSBY_SOURCE_STRAVA_TOKEN
+    //   }
+    // }
   ],
 }

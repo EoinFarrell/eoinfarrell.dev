@@ -1,9 +1,9 @@
 ---
-title: Dublin to Copenhagen - Day 9
+title: Dublin to Copenhagen - Visiting Swedens
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-9
+imageTag: europe-cycle-2019-sweden
 ---
 
 # Dublin to Copenhagen - Day xxx

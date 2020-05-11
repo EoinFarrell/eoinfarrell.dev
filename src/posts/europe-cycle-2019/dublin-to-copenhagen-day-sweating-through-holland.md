@@ -1,9 +1,9 @@
 ---
-title: Dublin to Copenhagen - Day 6
+title: Dublin to Copenhagen - Sweating through Holland
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-6
+imageTag: europe-cycle-2019-netherlands
 ---
 
 # Dublin to Copenhagen - Day 6

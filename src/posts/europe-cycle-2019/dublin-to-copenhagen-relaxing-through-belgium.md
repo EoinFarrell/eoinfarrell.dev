@@ -1,9 +1,9 @@
 ---
-title: Dublin to Copenhagen - Day 5
+title: Dublin to Copenhagen - Relaxing through Belgium
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-5
+imageTag: europe-cycle-2019-belgium
 ---
 
 # Dublin to Copenhagen - Day 5

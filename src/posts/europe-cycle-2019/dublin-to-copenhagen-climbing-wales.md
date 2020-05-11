@@ -1,9 +1,10 @@
 ---
-title: Dublin to Copenhagen - Day 2
+title: Dublin to Copenhagen - Climbing Wales
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-2
+imageTag: europe-cycle-2019-wales
+stravaLink: [3267858330/embed/b97c766d74a24652aae0932eaef3b168e9ce648d]
 ---
 
 # Dublin to Copenhagen - Day 2
@@ -31,7 +32,3 @@ imageTag: europe-cycle-2019-day-2
 *   Reach hotel at a reasonable 8pm and proceed to ordre awful overpriced take away
 *   Look over cycle and realise I cycled further with more hills by diverting south to coast rather than continuing across moutains on pre-planned route, and I'm in Cardiff rather than Newport
 *   Fall asleep fully clothed without managing to get under covers
-
-#### Pictures
-
-#### Komoot & Strava Overviews

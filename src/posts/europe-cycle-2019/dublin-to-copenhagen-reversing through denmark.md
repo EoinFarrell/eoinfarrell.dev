@@ -1,9 +1,9 @@
 ---
-title: Dublin to Copenhagen - Day 10
+title: Dublin to Copenhagen - Reversing through Denmark
 date: "2020-01-19"
 draft: false
 gallery: true
-imageTag: europe-cycle-2019-day-10
+imageTag: europe-cycle-2019-denmark2
 ---
 
 # Dublin to Copenhagen - Day 10
