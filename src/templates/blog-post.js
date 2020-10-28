@@ -11,6 +11,20 @@ export default ({ data }) => {
   const post = data.markdownRemark
   const clImages = data.allCloudinaryMedia
 
+  var stravaLinks = []
+
+  for (var i = 0; i < post.frontmatter.stravaLink.length; i++) {
+    stravaLinks.push('https://www.strava.com/activities/' + post.frontmatter.stravaLink[i])
+  }
+
+  var komootLinks = []
+
+  if(post.frontmatter.komootLink){
+    for (var i = 0; i < post.frontmatter.komootLink.length; i++) {
+      komootLinks.push('https://www.komoot.com/tour/' + post.frontmatter.komootLink[i] + '/embed?profile=1')
+    }
+  }
+
   var galleryImages = [];
 
   for (var i = 0; i < clImages.edges.length; i++) {
@@ -19,7 +33,6 @@ export default ({ data }) => {
       thumbnail: clImages.edges[i].node.url
     })
   }
-  
 
   return (
     <Layout>
@@ -29,14 +42,16 @@ export default ({ data }) => {
         <h1>{post.frontmatter.title}</h1>   
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        {post.frontmatter.stravaLink}
+        {stravaLinks.map((link) => (
+            <iframe height='405' width='590' frameBorder='0' allowtransparency='true' scrolling='no' src={link}></iframe>
+          ))
+        }
 
-        https://www.strava.com/activities/
-
-        <h2>Komoot & Strava Overviews</h2>
-        <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/2381256657/embed/42361ffe547880db6aa0723fe996fea0e3203a0f'></iframe>
-        <iframe height='405' width='590' frameBorder='0' allowtransparency='true' scrolling='no' src={post.frontmatter.stravaLink}></iframe>
-        <iframe src="https://www.komoot.com/tour/67493710/embed?profile=1" width="100%" height="580" frameBorder="0" scrolling="no"></iframe>
+        {komootLinks.map((link) => (
+            <iframe height="580" width="100%" frameBorder="0" scrolling="no" src={link}></iframe>
+          ))
+        }
+        
 
         <h2>Pictures</h2>
           <ImageGallery 
@@ -91,6 +106,7 @@ export const query = graphql`
         draft
         gallery
         stravaLink
+        komootLink
       }
     }
     allCloudinaryMedia(filter: {tags: {eq: $imageTag}}, sort: {order: ASC, fields: original_filename}) {

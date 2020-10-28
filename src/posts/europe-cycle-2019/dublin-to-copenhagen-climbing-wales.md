@@ -4,6 +4,7 @@ date: "2020-01-19"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-wales
+komootLink: [70466634,67493710,70983132]
 stravaLink: [3267858330/embed/b97c766d74a24652aae0932eaef3b168e9ce648d]
 ---
 

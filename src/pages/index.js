@@ -21,7 +21,7 @@ export default ({ data }) => {
 
     <div>
       <h1>
-        Amazing Pandas Eating Things
+        Blog
       </h1>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
