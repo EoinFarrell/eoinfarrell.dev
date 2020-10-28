@@ -1,14 +1,14 @@
 ---
-title: Dublin to Copenhagen - Passing through France
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Passing through France
+date: "2019-05-28"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-france
+komootLink: [70466634,67493710,70983132]
+stravaLink: [2402223747/embed/303181d3d81b5ca0425f9dd1fa505c2c89d78fdc, 2403925392/embed/890e3ae6ba48c09b2a3204457be5d6324b54dd98]
 ---
-
-# Dublin to Copenhagen - Day 4
-
-### Bristol to Dublin
 
 #### Goals for the day
 

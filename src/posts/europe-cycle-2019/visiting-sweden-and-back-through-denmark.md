@@ -1,14 +1,13 @@
 ---
-title: Dublin to Copenhagen - Visiting Swedens
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Visiting Sweden and back through Denmark  
+date: "2019-06-15"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-sweden
+stravaLink: [2463645670/embed/3c83430aaf7bd215a28a50b4c2715237ca5cbc0a]
 ---
-
-# Dublin to Copenhagen - Day xxx
-
-### Another day off in Brighton
 
 #### Goals for the day
 

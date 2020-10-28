@@ -24,9 +24,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
+
+  const cycleTripEntries = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: {frontmatter: {draft: {eq: false}, type: {eq: "cycle-trip-entry"}}}) {
         edges {
           node {
             frontmatter {
@@ -43,14 +44,13 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    console.log("Page Name: " + node.frontmatter.title)
-    console.log("Is Draft: " + node.frontmatter.draft)
-    console.log("Image Tag: " + node.frontmatter.imageTag)
-    if (node.frontmatter.draft === false) {
+  cycleTripEntries.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    // console.log("Page Name: " + node.frontmatter.title)
+    // console.log("Image Tag: " + node.frontmatter.imageTag)
+    
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/templates/blog-post.js`),
+        component: path.resolve(`./src/templates/cycle-trip-entry.js`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
@@ -59,6 +59,45 @@ exports.createPages = async ({ graphql, actions }) => {
           imageTag: node.frontmatter.imageTag
         },
       })
+  })
+  
+  const cycleTripOverviews = await graphql(`
+    query {
+      allMarkdownRemark(filter: {frontmatter: {draft: {eq: false} type: {eq: "cycle-trip-overview"}}}) {
+        edges {
+          node {
+            frontmatter {
+              title
+              draft
+              imageTag
+              catalog
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
     }
+  `)
+
+  cycleTripOverviews.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    console.log("Page Name: " + node.frontmatter.title)
+    console.log("Image Tag: " + node.frontmatter.imageTag)
+    console.log("Image Tag: " + node.frontmatter.catalog)
+    console.log("Image Tag: " + node.fields.slug)
+    
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/cycle-trip-overview.js`),
+        context: {
+          // Data passed to context is available
+          // in page queries as GraphQL variables.
+          slug: node.fields.slug,
+          title: node.fields.title,
+          imageTag: node.frontmatter.imageTag,
+          catalog: node.frontmatter.catalog
+        },
+      })
   })
 }

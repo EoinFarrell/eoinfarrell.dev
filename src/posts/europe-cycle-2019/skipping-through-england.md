@@ -1,14 +1,14 @@
 ---
-title: Dublin to Copenhagen - Skipping through England
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Skipping through England
+date: "2019-05-21"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-england
+komootLink: [70466634,67493710,70983132]
+stravaLink: [2384509689/embed/cd311a4ea56a3eca948e18db8155e684a7023ed1, 2391334008/embed/3a09e7a38b0aedc48d43ab4a2c81c303449784c2, 2401733669/embed/a483f7230f46ed58fed7a125ddf59b581f3a21a7]
 ---
-
-# Dublin to Copenhagen - Day 3
-
-### Cardiff to Bristol
 
 #### Goals for the day
 

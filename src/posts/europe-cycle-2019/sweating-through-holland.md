@@ -1,14 +1,14 @@
 ---
-title: Dublin to Copenhagen - Sweating through Holland
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Sweating through Holland
+date: "2019-05-31"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-netherlands
+komootLink: [70466634,67493710,70983132]
+stravaLink: [2411517731/embed/e6dade09fb74d5736b7c7ee840b942085f000430, 2418676861/embed/f07ad5a12ad0786f7a57df1a1348eea5b4918c23]
 ---
-
-# Dublin to Copenhagen - Day 6
-
-### Dublin to Brighton
 
 #### Goals for the day
 

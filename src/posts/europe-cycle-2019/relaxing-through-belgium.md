@@ -1,14 +1,14 @@
 ---
-title: Dublin to Copenhagen - Relaxing through Belgium
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Relaxing through Belgium
+date: "2019-05-29"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-belgium
+komootLink: [70466634,67493710,70983132]
+stravaLink: [2405946542/embed/ddec4734fcadf2572dfc4aef67ea2a5b73643de6, 2407126369/embed/aa3c381160074d87c6933afb4c31a7a33784f1bd]
 ---
-
-# Dublin to Copenhagen - Day 5
-
-### Final day of work and football Final
 
 #### Goals for the day
 

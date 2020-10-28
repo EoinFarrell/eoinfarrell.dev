@@ -1,16 +1,14 @@
 ---
-title: Dublin to Copenhagen - Climbing Wales
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Climbing Wales
+date: "2019-05-19"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-wales
 komootLink: [70466634,67493710,70983132]
-stravaLink: [3267858330/embed/b97c766d74a24652aae0932eaef3b168e9ce648d]
+stravaLink: [2381256657/embed/42361ffe547880db6aa0723fe996fea0e3203a0f, 2382827612/embed/1d63c77bd77e9ab267d4059f039c02b3e0d12360]
 ---
-
-# Dublin to Copenhagen - Day 2
-
-### Fishguard to Cardiff
 
 #### Goals for the day
 

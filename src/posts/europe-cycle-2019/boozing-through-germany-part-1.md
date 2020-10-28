@@ -1,13 +1,13 @@
 ---
-title: Dublin to Copenhagen - Boozing through Germany - Part 1
-date: "2019-06-05"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Boozing through Germany - Part 1
+date: "2019-06-03"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-germany-1
-stravaLink: [3267858330/embed/b97c766d74a24652aae0932eaef3b168e9ce648d, 2381256657/embed/42361ffe547880db6aa0723fe996fea0e3203a0f]
+stravaLink: [2421109030/embed/540fb41d5e00d9e7e5dc078c30aa4a7166e80163, 2427548430/embed/42cb7d7a12b2a5be5143f08cdb97d883722b4e84]
 ---
-
-# Dublin to Copenhagen - Day 7
 
 ### Thorpe Park
 

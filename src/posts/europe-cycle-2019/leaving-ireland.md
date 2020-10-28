@@ -1,12 +1,12 @@
 ---
-title: Dublin to Copenhagen - Leaving Ireland
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Leaving Ireland
+date: "2019-05-18"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-ireland
 ---
-
-### Dublin to Rosslare
 
 #### Stats
 

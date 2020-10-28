@@ -1,14 +1,13 @@
 ---
-title: Dublin to Copenhagen - Football in Denmark
-date: "2020-01-19"
+catalog: "Europe 2019"
+type: cycle-trip-entry
+title: Football in Denmark
+date: "2019-06-06"
 draft: false
 gallery: true
 imageTag: europe-cycle-2019-denmark1
+stravaLink: [2430989994/embed/f85dc4c3916fbead6c624306c76d23d1b6347772]
 ---
-
-# Dublin to Copenhagen - Day 8
-
-### Day off in Brighton
 
 #### Goals for the day
 

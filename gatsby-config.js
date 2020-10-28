@@ -61,7 +61,7 @@ module.exports = {
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
         api_key: process.env.CLOUDINARY_API_KEY,
         api_secret: process.env.CLOUDINARY_API_SECRET,
-        max_results: 500, // optional, default: 10s
+        max_results: 1, // optional, default: 10s
         prefix: `Europe Cycle 2019`, // optional
         resourceType: `image`,
         type: `upload`,
