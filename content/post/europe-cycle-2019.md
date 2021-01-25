@@ -9,3 +9,5 @@ imageTag: europe-cycle-2019-sweden
 komootCollectionId: 1053798 
 categories: ["Adventures"]
 ---
+
+{{< komoot 1053798 >}}
