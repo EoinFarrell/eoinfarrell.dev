@@ -3,7 +3,7 @@ series: "Europe 2019"
 layout: cycle-trip-entry
 title: Visiting Sweden and back through Denmark  
 date: "2019-06-15"
-draft: false
+draft: true
 gallery: true
 imageTag: europe-cycle-2019-sweden
 stravaLink: [2463645670/embed/3c83430aaf7bd215a28a50b4c2715237ca5cbc0a]

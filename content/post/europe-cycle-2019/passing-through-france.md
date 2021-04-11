@@ -3,7 +3,7 @@ series: "Europe 2019"
 layout: cycle-trip-entry
 title: Passing through France
 date: "2019-05-28"
-draft: false
+draft: true
 gallery: true
 imageTag: europe-cycle-2019-france
 komootLink: [70466634,67493710,70983132]

@@ -3,7 +3,7 @@ series: "Westport to Galway"
 layout: cycle-trip-overview
 title: Westport to Galway
 date: "2020-08-04"
-draft: false
+draft: true
 gallery: true
 imageTag: europe-cycle-2019-sweden
 komootCollectionId: 1003820

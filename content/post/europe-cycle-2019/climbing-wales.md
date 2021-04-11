@@ -3,7 +3,7 @@ series: "Europe 2019"
 type: cycle-trip-entry
 title: Climbing Wales
 date: "2019-05-19"
-draft: false
+draft: true
 gallery: true
 imageTag: europe-cycle-2019-wales
 komootLink: [70466634,67493710,70983132]

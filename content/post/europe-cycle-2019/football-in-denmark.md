@@ -3,7 +3,7 @@ series: "Europe 2019"
 layout: cycle-trip-entry
 title: Football in Denmark
 date: "2019-06-06"
-draft: false
+draft: true
 gallery: true
 imageTag: europe-cycle-2019-denmark1
 stravaLink: [2430989994/embed/f85dc4c3916fbead6c624306c76d23d1b6347772]

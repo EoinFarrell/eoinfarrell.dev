@@ -3,7 +3,7 @@ series: "Europe 2019"
 layout: cycle-trip-entry
 title: Relaxing through Belgium
 date: "2019-05-29"
-draft: false
+draft: true
 gallery: true
 imageTag: europe-cycle-2019-belgium
 komootLink: [70466634,67493710,70983132]

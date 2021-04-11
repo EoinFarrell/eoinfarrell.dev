@@ -3,7 +3,7 @@ series: "Europe 2019"
 layout: cycle-trip-entry
 title: Boozing through Germany - Part 1
 date: "2019-06-03"
-draft: false
+draft: true
 gallery: true
 imageTag: europe-cycle-2019-germany-1
 stravaLink:
