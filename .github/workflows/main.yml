@@ -28,14 +28,12 @@ jobs:
       # uses: crazy-max/ghaction-github-pages@b8f8d291c97fe0edd9fb4ee73018163593418e8f
       uses: crazy-max/ghaction-github-pages@v2.3.0
       with:
-        # Git domain (default github.com)
-        #domain: photos.eoinfarrell.dev
         # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
         repo: EoinFarrell/eoinfarrell.github.io
         # Git branch where assets will be deployed
         target_branch: master # optional, default is gh-pages
         # Create incremental commit instead of doing push force
-        keep_history: true
+        keep_history: false
         # Allow an empty commit to be created
         #allow_empty_commit: # optional, default is true
         # Build directory to deploy
