@@ -5,10 +5,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: Check out code
-      uses: actions/checkout@master
-    - name: Checkout submodules
-      uses: textbook/git-checkout-submodule-action@2.1.1
+    - name: Checkout repository and submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
     - name: Hugo setup
       uses: peaceiris/actions-hugo@v2.5.0
       #with:
