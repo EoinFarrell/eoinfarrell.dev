@@ -11,11 +11,11 @@ jobs:
         submodules: recursive
     - name: Hugo setup
       uses: peaceiris/actions-hugo@v2.5.0
-      #with:
+      with:
         # The Hugo version to download (if necessary) and use. Example: 0.58.2
         #hugo-version: # optional, default is latest
         # Download (if necessary) and use Hugo extended version. Example: true
-        #extended: # optional, default is false
+        extended: true
     # Runs a single command using the runners shell
     - name: Build
       run: hugo --minify
