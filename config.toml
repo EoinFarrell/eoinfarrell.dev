@@ -5,6 +5,9 @@ title = "Hello"
 theme = "hallo"
 disableKinds = ["page", "section", "taxonomy"]
 
+[Author]
+    name = "Eoin Farrell"
+
 [params]
 
     [[params.author]]
