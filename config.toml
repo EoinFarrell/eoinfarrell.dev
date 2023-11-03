@@ -3,12 +3,12 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = "Hello"
 theme = "hallo"
-disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
-
-[Author]
-    name = "Eoin Farrell"
+disableKinds = ["page", "section", "taxonomy"]
 
 [params]
+
+    [[params.author]]
+        name = "Eoin Farrell"
 
     [params.colors]
         background = "#81c6ff"
